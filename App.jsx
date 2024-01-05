@@ -1,12 +1,16 @@
-// App.jsx
 import React from 'react';
-import HomePage from './HomePage'; // Import HomePage component
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './Login';
+import HomePage from './HomePage';
 
 function App() {
   return (
-    <div>
-      <HomePage />  {/* Using HomePage component */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 
