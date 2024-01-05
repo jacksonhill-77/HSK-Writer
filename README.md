@@ -1,2 +1,5 @@
 # HSK-Writer
 A website to help users write with all of the vocabulary they know
+
+# Outline
+it's a website where people enter sentences/ paragraphs they have written in mandarin. they select what HSK level they are at/ aiming to be at. the website stores these sentences/ paragraphs in an SQL database. each time the user uses certain words, the weight associated with their the website then checks the user's history of entires for vocabulary around their level that they have not been using. it calculates which vocabulary has been used the least, and shows the top 5-10 (this number can be customisable). the user is prompted to select whether they have forgotten the vocabulary, or remember it but just haven't used it. in the case of the former, the next time the user is entering text, they are reminded of vocabulary to use. in the case of the latter, the user is then prompted to select how well they remember the word. the weight associated with how forgotten we believe them to be is decreased.
